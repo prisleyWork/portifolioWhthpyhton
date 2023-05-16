@@ -1,0 +1,200 @@
+body{
+    background-image: url(../imagens/Fundo/fundo-site.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    color: #d3cbf1;
+    border: #ff0000;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color: #174c7884;
+    width: 370px;
+    border: 1px solid #5826e1;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img{
+    border-radius: 13px;
+    border: 2px solid #911bda;    
+    width: 25%;
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 26px;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 20px;
+    color: #6aff07;
+}
+
+.cartao .conteudo{
+    margin-top: 15px;
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.9s ease-in-out;
+}
+
+.cartao .abas img{
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #26262698;
+}
+
+.cartao .informacoes-abas{
+    background-color: #2626269d;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #ec060680;
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.informacoes-abas .descricao span{
+    color: #00ff0d;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{    
+    width: 250px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais .curriculo{
+    background-color: #0fbc09;
+    border-radius: 5px;
+}
+
+.redes-sociais .linkedin{
+    background-color: #4da7f087;
+    border-radius: 5px;
+}
+
+.redes-sociais .github{
+    background-color: #562f2f81;
+    border-radius: 5px;
+}
+
+.redes-sociais .WhatsApp{
+    background-color: #1da92b81;
+    border-radius: 5px;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .galeria img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+  }
+  .galeria-lightbox img {
+    cursor: pointer;
+  }
+  .imagem-ampliada {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  .imagem-ampliada img {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 50px;
+    box-shadow: 0 0 15px #000;
+    border-radius: 5px;
+  }
+  .galeria-lightbox img:hover {
+    opacity: 0.7;
+  }
+  
+  .galeria-lightbox img:active {
+    opacity: 1;
+  }
+  
+  .galeria-lightbox img:active + .imagem-ampliada {
+    display: block;
+  }
+
+  .site-info {
+    background-color: #ff7f50;
+  }
+  
